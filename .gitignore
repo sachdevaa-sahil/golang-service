@@ -1,0 +1,3 @@
+# Local build and debugger output
+/bin/
+__debug_bin*
