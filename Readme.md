@@ -5,8 +5,9 @@ Small runnable examples of Go data types, arrays, slices, and operators.
 ## Project structure
 
 ```text
+main.go             # Entry point; choose which examples to run here
+cmd/users/          # User examples
 cmd/basics/
-  main.go           # Entry point; choose which examples to run here
   basic_types.go    # Variables and basic data types
   arrays_slices.go  # Arrays and slices
   operators.go      # Arithmetic, comparisons, and other operators
@@ -15,18 +16,18 @@ docker-compose.yml # Local MongoDB service
 go.mod              # Go module and toolchain version
 ```
 
-All files in `cmd/basics` belong to the same `main` package and compile together.
+All files in `cmd/basics` belong to the same `basics` package and compile together.
 
 ## Run
 
 From the project root:
 
 ```sh
-go run ./cmd/basics
+go run .
 ```
 
-The operators example runs by default. Edit `cmd/basics/main.go` to enable
-other examples.
+The program prints "Main Program" by default. In `main.go`, uncomment an
+example call and its matching package import to run it.
 
 ## Debug
 
