@@ -23,7 +23,8 @@ func main() {
 
 	// ModifyStructWithPointer(&person, 40, "Charlie")
 	// PrintPersonInfo(person)
-	MethodsAndReceiversExample()
+	// MethodsAndReceiversExample()
+	InterfacesExample()
 }
 
 // var user User
